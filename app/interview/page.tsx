@@ -139,7 +139,41 @@ export default function InterviewPage() {
               <span>🎧</span> Audiofragment van het interview
             </h2>
             <div className="bg-white p-6 rounded-xl border border-gray-200 text-center text-gray-500 italic">
-              (Hier komen nog fragmenten)
+              <audio controls className="w-full">
+                <source src="/interview.m4a" type="audio/mp4" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+
+             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3 mt-8">
+              <span>📌</span> Highlights van het interview
+            </h2>
+            <div className="bg-white p-6 rounded-xl border border-gray-200 text-center text-gray-500 italic">
+              <audio controls className="w-full">
+                <source src="/blessureperiode.m4a" type="audio/mp4" />
+                Your browser does not support the audio element.
+              </audio>
+              <p className="text-gray-600 mt-2">
+                Hier spreekt Jarne over zijn blessureperiode.
+              </p>
+
+
+              <audio controls className="w-full mt-12">
+                <source src="/motivatie.m4a" type="audio/mp4" />
+                Your browser does not support the audio element.
+              </audio>
+              <p className="text-gray-600 mt-2">
+                Jarne zijn opinie over motivatie bij jongeren.
+              </p>
+
+              <audio controls className="w-full mt-12">
+                <source src="/fairplay.m4a" type="audio/mp4" />
+                Your browser does not support the audio element.
+              </audio>
+              <p className="text-gray-600 mt-2">
+                Wat fair play betekent op het veld voor Jarne.
+              </p>
             </div>
           </div>
 
