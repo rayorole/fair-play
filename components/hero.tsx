@@ -73,7 +73,7 @@ export default function Hero() {
                 <source src="promo.mp4" type="video/mp4" />
               </video> */}
               <iframe
-                src="https://drive.google.com/file/d/1ZWkZj5WdNwThLab3W5x71EQyCkEGsh0D/preview"
+                src="https://drive.google.com/file/d/1S9WKwdQi0JFOeOTJc7XpSKQa7C9t8A6_/preview"
                 className="w-full h-96"
               ></iframe>
             </div>

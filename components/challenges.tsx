@@ -1,5 +1,7 @@
 import React from "react";
 import Challenge from "./challenge";
+import { challenges } from "@/lib/challenges";
+import Link from "next/link";
 
 export default function Challenges({ darkMode }: { darkMode: boolean }) {
   return (
@@ -44,31 +46,22 @@ export default function Challenges({ darkMode }: { darkMode: boolean }) {
 
         {/* Challenges Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            className={`animate-fade-in-up ${
-              darkMode ? "bg-gray-800" : "bg-white"
-            }`}
-            style={{ animationDelay: "0.1s" }}
-          >
-            <Challenge darkMode={darkMode} />
-          </div>
-          <div
-            className="animate-fade-in-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <Challenge darkMode={darkMode} />
-          </div>
-          <div
-            className="animate-fade-in-up"
-            style={{ animationDelay: "0.3s" }}
-          >
-            <Challenge darkMode={darkMode} />
-          </div>
+          {challenges.slice(0, 3).map((challenge, index) => (
+            <div
+              key={challenge.slug}
+              className={`animate-fade-in-up ${
+                darkMode ? "bg-gray-800" : "bg-white"
+              }`}
+              style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+            >
+              <Challenge challenge={challenge} darkMode={darkMode} />
+            </div>
+          ))}
         </div>
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <button
+          <Link href="/challenges"
             className={`group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ${
               darkMode ? "bg-gray-800" : "bg-white"
             }`}
@@ -79,7 +72,7 @@ export default function Challenges({ darkMode }: { darkMode: boolean }) {
                 darkMode ? "bg-gray-800" : "bg-white"
               }`}
             ></div>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
