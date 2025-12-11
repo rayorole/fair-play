@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Interview() {
   return (
@@ -13,10 +14,7 @@ export default function Interview() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Meet the
-            <span className="block bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-              Football Legends
-            </span>
+            A legend in the making
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -35,7 +33,7 @@ export default function Interview() {
                 src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                alt="Jan Vertonghen interview"
+                alt="Jarne Flies interview"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
@@ -49,14 +47,14 @@ export default function Interview() {
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">JV</span>
+                <span className="text-white font-bold text-lg">JF</span>
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">
-                  Jan Vertonghen
+                  Jarne Flies
                 </h3>
                 <p className="text-gray-600">
-                  Former Tottenham & Belgium Defender
+                  Professional football player
                 </p>
               </div>
             </div>
@@ -66,7 +64,7 @@ export default function Interview() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              In this exclusive interview, Jan Vertonghen shares his journey
+              In this interview, Jarne Flies shares his journey
               from a young boy in Belgium to becoming one of the most respected
               defenders in European football. He talks about the challenges,
               triumphs, and what it truly means to play the beautiful game at
@@ -88,7 +86,7 @@ export default function Interview() {
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span>45 minutes</span>
+                <span>8 minutes</span>
               </div>
 
               <div className="flex items-center gap-2">
@@ -110,14 +108,10 @@ export default function Interview() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <Link href="/interview" className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
                 <span className="relative z-10">Read Interview</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
-
-              <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-green-500 hover:text-green-600 transition-all duration-300">
-                Share
-              </button>
+              </Link>
             </div>
           </div>
         </div>

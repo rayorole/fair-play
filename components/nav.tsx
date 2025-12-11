@@ -52,10 +52,10 @@ export default function Nav() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
-              href="/info"
+              href="/quiz"
               className="text-gray-700 hover:text-green-600 font-medium transition-colors duration-200 relative group"
             >
-              Info
+              Quiz
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
@@ -147,11 +147,11 @@ export default function Nav() {
                 Promovideo
               </Link>
               <Link
-                href="/info"
+                href="/quiz"
                 className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Info
+                Quiz
               </Link>
               <Link
                 href="/wie-is-wie"
