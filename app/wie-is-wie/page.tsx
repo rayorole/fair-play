@@ -25,7 +25,7 @@ export default function WieIsWie() {
       image: "/3.jpg",
     },
     {
-      name: "Mariam",
+      name: "Mariam Abzik",
       role: "Quality Control",
       description:
         "Ensuring the quality of the project by checking the work of the other team members.",
@@ -74,7 +74,7 @@ export default function WieIsWie() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
